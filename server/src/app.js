@@ -30,9 +30,10 @@ app.use(session({
 
 const db = mysql.createConnection({
     user: 'root',
-    host: 'localhost',
-    password: '1234',
-    database: 'condor'
+    host: 'containers-us-west-76.railway.app',
+    password: 'oPAqTWuzgmpW9RIsV7dZ',
+    database: 'railway',
+    port: '6755'
 });
 
 app.post('/login', (req, res) => {
